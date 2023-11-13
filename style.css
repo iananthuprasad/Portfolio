@@ -6,8 +6,9 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
+   
 }
 #header{
     width: 100%;
@@ -26,7 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+   
 }
 .navbg{
     height: 60px;
@@ -47,6 +48,7 @@ body{
     gap: 4rem;
     font-size: 18px;
     font-weight: bolder;
+   
     
 }
 .nav-bar li a{
@@ -66,7 +68,7 @@ body{
     transition: .4s;
     
 }
-.nav-bar li a:hover::after{
+#nav-bar li a:hover::after{
     width: 100%;
 }
 .header-text{
@@ -101,6 +103,7 @@ body{
     border-radius: 15px;
     background-size:150%;
     background-position-y:30%;
+    background-repeat: no-repeat;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -276,11 +279,20 @@ margin-bottom: 15px;
 }
 
 /*-------------------contact-------------------*/
+#contact{
+    position: relative;
+}
+.row{
+    display: flex;
+    height: 80vh;
+}
 .contact-left{
     flex-basis: 35%;
+ 
 }
 .contact-right{
     flex-basis: 60%;
+
 }
 .contact-left p{
     margin-top: 30px;
@@ -326,4 +338,101 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+.copy
+{
+   
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    
+}
+
+
+/*-------------------responsive-----------------------*/
+nav .abc{
+    display: none;
+}
+
+
+@media only screen and (max-width:800px){
+
+    .nav-bar {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+            font-size: 18px;
+            font-weight: bolder;
+    
+    
+        }
+}
+
+@media only screen and (max-width:650px){
+  
+#header{
+    width: 100%;
+    background-image: url(/images/backk.jpg);
+    background-position-x:55%;
+    overflow: hidden;
+   
+}
+.header-text{
+    margin-top: 30%;
+    font-size: 16px;
+}
+.header-text h1{
+    font-size: 30px;
+}
+nav .abc{
+    display: block;
+}
+.nav-bar{
+    background: #ff004f;
+    position: fixed;
+    top:0;
+    right: 0;
+    width:  150px ;
+    height: 100vh;
+    padding-top: 50px;
+    align-items: center;
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    transition: 0.5s; 
+    gap: 40px; 
+}
+.subtitle{
+    font-size: 40px;
+}
+.about-col-1,.about-col-2{
+    flex-basis: 100%;
+
+}
+.con{
+        position: absolute;
+        top: 0;
+}
+.ser{
+    padding-top: 350px;
+}
+.aboutt{
+    width:85%;
+    font-size: 14px;
+}
+.contact-left,.contact-right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+}
+.copy{
+    margin-top: 900px;
+}
+
 }
