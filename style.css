@@ -67,10 +67,10 @@ body{
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: .4s;
+    transition: .5s;
     
 }
-#nav-bar li a:hover::after{
+.nav-bar li a:hover::after{
     width: 100%;
 }
 .header-text{
@@ -435,6 +435,12 @@ nav .abc{
 }
 .copy{
     margin-top: 900px;
+}
+.work img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
 }
 
 }
