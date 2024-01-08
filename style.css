@@ -67,7 +67,7 @@ body{
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: .5s;
+    transition: .6s;
     
 }
 .nav-bar li a:hover::after{
