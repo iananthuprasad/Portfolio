@@ -92,7 +92,7 @@ body{
     padding: 80px 0;
     color: #ababab;
     height: 100vh;
-    margin-bottom: 23%;
+    margin-bottom: 10%;
 }
 .row{
     display: flex;
@@ -453,6 +453,12 @@ nav .abc{
 .header-text{
     margin-top: 160%;
     font-size: 30px;
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    height: 100vh;
+    margin-bottom: 40%;
 }
 
 }
